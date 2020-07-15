@@ -106,14 +106,11 @@ class LinkedList {
     let thisNode = this.head;
     while (thisNode.next) {
       if (!thisNode.next) break;
-      // console.log('thisNode.value: ', thisNode.value);
-      // console.log('.value: ', thisNode.next.value);
       if (thisNode.value === thisNode.next.value) {
         return thisNode.value;
       }
       let _val = thisNode.next.value;
       let _next = thisNode.next.next;
-      // console.log('next.value: ', thisNode.next.value);
       this.remove(_val);
       // console.log(thisNode);
       thisNode.next = _next;
@@ -124,17 +121,19 @@ class LinkedList {
 }
 
 
-function main() {
-  const list1 = new LinkedList();
+// function main() {
+//   const list1 = new LinkedList();
 
-  R.map(el => {
-    list1.append(el)
-  })(R.range(1, 78))
+//   R.map(el => {
+//     list1.append(el)
+//   })(R.range(1, 78))
 
-  console.log(list1);
-  console.log(list1.find(29));
-  console.log(list1.kill1());
+//   console.log(list1);
+//   console.log(list1.find(29));
+//   console.log(list1.kill1());
 
-}
+// }
 
-main()
+// main()
+
+module.exports = LinkedList
