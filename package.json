@@ -1,0 +1,23 @@
+{
+  "name": "josephus_problem_circular_linked_list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linkedList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://AalindG@github.com/AalindG/josephus_problem_circular_linked_list.git"
+  },
+  "keywords": [],
+  "author": "Aalind Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AalindG/josephus_problem_circular_linked_list/issues"
+  },
+  "homepage": "https://github.com/AalindG/josephus_problem_circular_linked_list#readme",
+  "dependencies": {
+    "ramda": "^0.27.0"
+  }
+}
